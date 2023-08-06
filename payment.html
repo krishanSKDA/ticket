@@ -1,0 +1,201 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="./payment.css">
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Buy Tickets</h1>
+            <h3>Why you Choosing us..</h3>
+            <p class="txt">Welcome to our online ticket booking platform, dedicated to providing a seamless, convenient, and enjoyable experience for entertainment needs. Our top priorities include safety and security, ensuring personal information is protected and handled with utmost care. Our dedicated team is available to assist with queries and concerns, providing prompt and friendly customer support. Our platform is simple and intuitive, allowing users to secure tickets and create unforgettable memories with just a few clicks. Thank you for choosing us as your trusted ticket booking partner.</p>
+
+    </header>
+
+    <main class="container">
+        <section class="ui">
+            <div class="container-left">
+                <form id="credit-card">
+                    <div>
+                        <label for="card-number">Card Number</label>
+                        <input type="text" name="card-number" id="card-number" placeholder="1234 5678 9101 1121" required>
+                    </div>
+                    <div>
+                        <label for="name-text">Name on Card</label>
+                        <input type="text" name="name-text" id="name-text" placeholder="Krishan Danushka" required autocomplete="off">
+                    </div>
+                    <div class="infos-container">
+                        <div>
+                            <label for="valid-thru-text">Expiry Date</label>
+                            <input type="text" name="valid-thru-text" id="valid-thru-text" placeholder="02/28" required>
+                        </div>
+                        <div>
+                            <label for="cvv-text">CVC / CVV</label>
+                            <input type="text" name="cvv-text" id="cvv-text" placeholder="123" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="Pay" id="pay-btn" disabled>
+                </form>
+            </div>
+            <div class="container-right">
+                <div class="card">
+                
+                    <div class="intern">
+                        <img class="approximation" src="./img/aprox.png" alt="aproximation">
+                        <div class="card-number">
+                            <div class="number-vl">1234 5678 9101 1121</div>
+                        </div>
+                        <div class="card-holder">
+                            <label>Name on Card</label>
+                            <div class="name-vl">Krishan Danushka</div>
+                        </div>
+                        <div class="card-infos">
+                            <div class="exp">
+                                <label>Expiry Date</label>
+                                <div class="expiration-vl">02/28</div>
+                            </div>
+                            <div class="cvv">
+                                <label>CVC / CVV</label>
+                                <div class="cvv-vl">123</div>
+                            </div>
+                        </div>
+                        <img class="chip" src="./img/chip.png" alt="chip">
+                    </div>
+                </div>
+                <div class="summary-table">
+                    -- Summary table will be dynamically loaded here from local storage --
+                    <h2>Summary Table</h2>
+                    <table id="summary-table">
+                        <thead>
+                        <tr>
+                            <th>Card Number</th>
+                            <th>Name on Card</th>
+                            <th>Expiry Date</th>
+                            <th>CVC / CVV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        --add data dynamically--
+                    </tbody>
+                    </table>
+                    <button id="clear-data">Clear Data</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./payment.js"></script>
+
+    
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="./payment.css">
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Buy Tickets</h1>
+            <h3>Why you Choosing us..</h3>
+            <p class="txt">Welcome to our online ticket booking platform, dedicated to providing a seamless, convenient, and enjoyable experience for entertainment needs. Our top priorities include safety and security, ensuring personal information is protected and handled with utmost care. Our dedicated team is available to assist with queries and concerns, providing prompt and friendly customer support. Our platform is simple and intuitive, allowing users to secure tickets and create unforgettable memories with just a few clicks. Thank you for choosing us as your trusted ticket booking partner.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="ui">
+            <div class="container-left">
+                <form id="credit-card">
+                    <div>
+                        <label for="card-number">Card Number</label>
+                        <input type="text" name="card-number" id="card-number" placeholder="1234 5678 9101 1121" required>
+                    </div>
+                    <div>
+                        <label for="name-text">Name on Card</label>
+                        <input type="text" name="name-text" id="name-text" placeholder="Krishan Danushka" required autocomplete="off">
+                    </div>
+                    <div class="infos-container">
+                        <div>
+                            <label for="valid-thru-text">Expiry Date</label>
+                            <input type="text" name="valid-thru-text" id="valid-thru-text" placeholder="02/28" required>
+                        </div>
+                        <div>
+                            <label for="cvv-text">CVC / CVV</label>
+                            <input type="text" name="cvv-text" id="cvv-text" placeholder="123" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="Pay" id="pay-btn" disabled>   <!-- ... Your existing credit card form ... -->
+                </form>
+            </div>
+            <div class="container-right">
+                <div class="card">
+                    <div class="intern">
+                        <img class="approximation" src="./img/aprox.png" alt="aproximation">
+                        <div class="card-number">
+                            <div class="number-vl">1234 5678 9101 1121</div>
+                        </div>
+                        <div class="card-holder">
+                            <label>Name on Card</label>
+                            <div class="name-vl">Krishan Danushka</div>
+                        </div>
+                        <div class="card-infos">
+                            <div class="exp">
+                                <label>Expiry Date</label>
+                                <div class="expiration-vl">02/28</div>
+                            </div>
+                            <div class="cvv">
+                                <label>CVC / CVV</label>
+                                <div class="cvv-vl">123</div>
+                            </div>
+                        </div>
+                        <img class="chip" src="./img/chip.png" alt="chip">
+                    </div> <!-- ... Your existing card layout ... -->
+                </div>
+                <div class="summary-table">
+                    <h2>Summary Table</h2>
+                    <table id="summary-table">
+                        <thead>
+                        <tr>
+                            <th>Card Number</th>
+                            <th>Name on Card</th>
+                            <th>Expiry Date</th>
+                            <th>CVC / CVV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+             
+                    </tbody>
+                    </table>
+                    <button id="clear-data">Clear Data</button> <!-- ... Your existing summary table ... -->
+                </div>
+                <div class="ticket-details">
+                    <h2 id="hesding1">Ticket Details</h2>
+                    <table id="ticket-details-table">
+                        <!-- ... Your existing ticket details table ... -->
+                    </table>
+                    <p id="total">Total Payable: $<span id="total-payable"></span></p>
+                </div>
+                <div class="user-details">
+                    <h2 id="heading">User Details</h2>
+                    <p id="user">Name: <span id="user-name"></span></p>
+                    <p id="user">Email: <span id="user-email"></span></p>
+                    <p id="user">Mobile Number: <span id="user-mobile"></span></p>
+                  
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./payment.js"></script>
+</body>
+</html>

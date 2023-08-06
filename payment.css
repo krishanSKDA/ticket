@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(123,100,100,0.8)),url(./img/b.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+header {
+	background: url(./img/back2.jpg);
+	text-align: center;
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+	overflow: hidden;
+	border-radius: 0 0 50% 50% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+	
+}
+
+h1 {
+    color: rgba(45, 224, 255, 0.685);
+	font-family: Suez One;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3 .txt {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px; 
+    font-weight: 700  ;
+}
+h3{
+    margin-bottom: 20px;
+    color: red;
+}
+.txt{
+    text-align: center;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 3% auto;
+}
+
+.ui {
+    border: 0;
+    box-shadow: 0 0 10px 0 rgba(149, 184, 209, .5);
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10%;
+    display: flex;
+    gap: 20px;
+    background:linear-gradient(rgba(0,10,0,0.7),rgba(10,0,0,0.6)),url(./img/pay.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+
+.container-left {
+    width: 50%;
+}
+
+.container-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 360px;
+    height: 230px;
+    margin: 0 auto;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,140,177,1) 35%, rgba(0,29,125,1) 100%);
+    border: 1px solid rgba(255, 15, 15, 0.3);
+    border-radius: 10px;
+}
+
+.intern {
+    padding: 20px;
+}
+
+.approximation {
+    width: 30px;
+    transform: rotate(90deg);
+}
+
+.chip {
+    height: 40px;
+    position: relative;
+    left: 90%;
+    bottom: 30px;
+}
+
+.card-number {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+}
+
+.card-holder {
+    color: whitesmoke;
+}
+
+.card label {
+    font-size: .7rem;
+}
+
+.card-infos {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    color: white;
+}
+
+#credit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.number-container, .name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.expiration-container, .cvv-container {
+    width: 50%;
+}
+
+input {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline: 0;
+    width: 90%;
+}
+
+
+input[type="text"]:focus {
+    border: 1px solid #f8fcff;
+}
+
+input#valid-thru-text, input#cvv-text {
+    width: 80%;
+}
+
+input[type="submit"] {
+    width: 95%;
+    background-color: #008cb1;
+    cursor: pointer;
+}
+
+.infos-container {
+    display: flex;
+}
+
+.summary-table {
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+th {
+    background-color: #37bf7f;
+    color: #000000;
+}
+/* Center align the content */
+.ticket-details, .user-details {
+    text-align: center;
+    margin: 20px auto; /* Center the sections with some spacing */
+    border: 1px solid #ccc; /* Add border to sections */
+    padding: 20px; /* Add padding to sections */
+    width: 70%; /* Adjust the width as needed */
+    background-color: #f7f7f7; /* Light gray background */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Style the tables */
+#ticket-details-table {
+    border-collapse: collapse;
+    width: 100%; /* Occupy full width within the section */
+}
+
+#ticket-details-table th,
+#ticket-details-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+#ticket-details-table th {
+    background-color: #f2f2f2;
+}
+
+#ticket-details-table td:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Style the total paragraph and its span */
+#total {
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+    margin-top: 10px; /* Add some space */
+}
+
+/* Style user details */
+.user-details {
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #f7f7f7; /* Light gray background */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.user-details p {
+    margin: 5px 0; /* Add spacing between user details */
+}
+
+
+@media (max-width: 1024px) {
+    .ui {
+        flex-direction: column-reverse;
+    }
+
+    .container-left, .container-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 300px) {
+    body {
+    
+        background-size: 100%;
+    }
+
+    header {
+        
+        background-size: 100%;
+    }
+
+    h1 {
+    
+        font-size: 60px;
+    }
+
+    h3 .txt {
+    
+        font-weight: 600;
+    }
+
+    .card {
+        width: 310px;
+        height: 200px;
+        margin: 0 auto;
+        background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,140,177,1) 35%, rgba(0,29,125,1) 100%);
+        border: 1px solid rgba(255, 15, 15, 0.3);
+        border-radius: 10px;
+    }
+    
+
+.intern {
+    padding: 1px;
+}
+
+.approximation {
+    width: 30px;
+    transform: rotate(90deg);
+    
+}
+
+.chip {
+    height: 40px;
+    position: relative;
+    left: 80%;
+    bottom: 40px;
+}
+
+.card-number {
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+}
+
+}

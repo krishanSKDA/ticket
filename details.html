@@ -1,0 +1,157 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+ 
+    <link rel="stylesheet" href="./details.css">
+    <title>Detail page</title>
+</head>
+<body>
+    --Header-
+    <header>
+        <div class="overlay">
+            <h1>Buy Tickets</h1>
+            <h3>Why you Choosing us..</h3>
+            <p class="txt">Welcome to our online ticket booking platform, dedicated to providing a seamless, convenient, and enjoyable experience for entertainment needs. Our top priorities include safety and security, ensuring personal information is protected and handled with utmost care. Our dedicated team is available to assist with queries and concerns, providing prompt and friendly customer support. Our platform is simple and intuitive, allowing users to secure tickets and create unforgettable memories with just a few clicks. Thank you for choosing us as your trusted ticket booking partner.</p>
+                
+              
+    </header>
+ 
+    --Data--
+    <div class="container">
+        <form action="#" method="post">
+            <h2>Enter Your Details</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <p>Same as on your ID</p>
+                    <input type="text"placeholder="Enter full name" name="name" id="name" required autocomplete="off">
+                </div>
+                <div class="input-box">
+                    <label for="number">Mobile Number</label>
+                    <p>We may reach out booking updates here over SMS/Whatsapp</p>
+                    <div class="flag-container">
+                        <div id="flag" class="flag-icon"></div>
+                        <input type="tel" placeholder="Mobile Number" id="phone-input" name="number" required autocomplete="off">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <p>We will send your Tickets here</p>
+                    <input type="email" placeholder="Enter your email address"  name="email" required autocomplete="off">
+                </div>
+                <div class="input-box">
+                    <label for="c-email">Confirm E-mail</label>
+                    <p>Just to ensure  we've go this right</p>
+                    <input type="email" placeholder="Enter confirm e-mail" name="c-mail" required autocomplete="off">
+                </div>
+                <div class="input-box">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender-list">
+                    <option value="none" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                   </select>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit" id="submit-button" disabled>Continue with Purchase</button>
+             </div>
+        </form>
+    </div>
+    <script src="./details.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+  <link rel="stylesheet" href="./details.css">
+  <title>Detail page</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="overlay">
+      <h1>Buy Tickets</h1>
+      <h3>Why Choose Us...</h3>
+      <p class="txt">Welcome to our online ticket booking platform, dedicated to providing a seamless, convenient, and enjoyable experience for entertainment needs. Our top priorities include safety and security, ensuring personal information is protected and handled with utmost care. Our dedicated team is available to assist with queries and concerns, providing prompt and friendly customer support. Our platform is simple and intuitive, allowing users to secure tickets and create unforgettable memories with just a few clicks. Thank you for choosing us as your trusted ticket booking partner.</p>
+    </div>
+  </header>
+
+  <!-- Data Form -->
+  <div class="container">
+    <form action="#" method="post">
+      <h2>Enter Your Details</h2>
+      <div class="content">
+        <div class="input-box">
+          <label for="name">Full Name</label>
+          <p>Same as on your ID</p>
+          <input type="text" placeholder="Enter full name" name="name" id="name" required autocomplete="off">
+        </div>
+        <div class="input-box">
+          <label for="number">Mobile Number</label>
+          <p>We may reach out booking updates here over SMS/Whatsapp</p>
+          <div class="flag-container">
+            <div id="flag" class="flag-icon"></div>
+            <input type="tel" placeholder="Mobile Number" id="phone-input" name="number" required autocomplete="off">
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="email">E-mail</label>
+          <p>We will send your Tickets here</p>
+          <input type="email" placeholder="Enter your email address" name="email" required autocomplete="off">
+        </div>
+        <div class="input-box">
+          <label for="c-email">Confirm E-mail</label>
+          <p>Just to ensure we've got this right</p>
+          <input type="email" placeholder="Enter confirm e-mail" name="c-mail" required autocomplete="off">
+        </div>
+        <div class="input-box">
+          <label for="gender">Gender</label>
+          <select name="gender" id="gender-list">
+            <option value="none" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="submit" id="submit-button" disabled>Continue with Purchase</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Table for Ticket Details -->
+  <h1 id="Ticket">Ticket Details</h1>
+  <table id="details-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody id="details-table-body">
+      <!-- Dynamically populate this table with data from Local Storage -->
+    </tbody>
+  </table>
+  <p id="total">Total Payable: $<span id="details-total"></span></p>
+
+  <script src="./details.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+</body>
+</html>
